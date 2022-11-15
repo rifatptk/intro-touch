@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="w-full min-h-screen bg-brand-gray">
+        <div className="w-full min-h-screen bg-brand-gray md:py-20">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/auth">
