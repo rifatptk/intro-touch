@@ -4,6 +4,7 @@ import Container from '../../components/common/Container';
 import ProfileHeader from '../../components/profile/ProfileHeader';
 import TechCards from '../../components/techCards/TechCards';
 import edit from '../../assets/icons/common/edit.png';
+import Navbar from '../../components/navbar/Navbar';
 
 const Dashboard = () => {
   return (
@@ -25,7 +26,7 @@ const Dashboard = () => {
             </div>
             <TechCards edit />
 
-            <div className="my-4 ">
+            <div className="mt-4 pb-20 ">
               <div className="mb-5">
                 <p className=" text-center text-brand-dark-gray">
                   www.yourwebsite.com
@@ -38,6 +39,7 @@ const Dashboard = () => {
               <Button text="Update" className="bg-brand-dark-brown" />
             </div>
           </div>
+          <Navbar />
         </div>
       </Container>
     </div>
