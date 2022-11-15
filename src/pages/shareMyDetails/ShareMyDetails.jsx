@@ -4,16 +4,14 @@ import avatar from '../../assets/images/avatar.png';
 import Input from '../../components/common/Input';
 import Textarea from '../../components/common/Textarea';
 import Button from '../../components/common/Button';
+import Brand from '../../components/common/Brand';
 
 const ShareMyDetails = () => {
   return (
     <div id="shareMyDetails">
       <Container>
         <div className="relative font-inter w-full min-h-screen md:min-h-0 md:h-[792px] bg-brand-brown p-7 ">
-          <div className="text-white w-fit font-bold leading-[1]">
-            <h1 className="text-xl">IntroTouch</h1>
-            <p className="text-right text-[10px]">.com</p>
-          </div>
+          <Brand />
 
           <div className="w-fit mx-auto my-5">
             <img
