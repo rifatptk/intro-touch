@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/dashboard/Dashboard';
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
 import ProfileFront from './pages/profileFront/ProfileFront';
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/share-my-details" element={<ShareMyDetails />} />
             <Route path="/profile-front" element={<ProfileFront />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/auth">
               <Route path="login" element={<Login />} />
             </Route>
