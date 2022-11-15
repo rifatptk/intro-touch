@@ -5,6 +5,7 @@ import ProfileHeader from '../../components/profile/ProfileHeader';
 import TechCards from '../../components/techCards/TechCards';
 import edit from '../../assets/icons/common/edit.png';
 import Navbar from '../../components/navbar/Navbar';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 const Dashboard = () => {
   return (
@@ -42,6 +43,7 @@ const Dashboard = () => {
           <Navbar />
         </div>
       </Container>
+      <Sidebar />
     </div>
   );
 };
