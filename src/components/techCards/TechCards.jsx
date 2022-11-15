@@ -55,11 +55,11 @@ const data = [
   },
 ];
 
-const TechCards = () => {
+const TechCards = ({ edit }) => {
   return (
     <div id="techCards" className="space-y-7">
       {data.map((el, i) => (
-        <TechCard data={el} key={i} />
+        <TechCard data={el} key={i} edit={edit} />
       ))}
     </div>
   );

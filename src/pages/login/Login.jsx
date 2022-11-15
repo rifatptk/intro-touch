@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <div id="login">
       <Container>
-        <div className="relative w-full min-h-screen md:min-h-0 md:h-[792px] bg-brand-brown pt-[20%]">
+        <div className="relative w-full min-h-screen md:min-h-0 md:h-[792px] overflow-auto [&::-webkit-scrollbar]:hidden bg-brand-brown pt-[20%]">
           <div className="text-white font-bold w-fit mx-auto leading-[1]">
             <h1 className="text-[36px]">IntroTouch</h1>
             <p className=" text-right ">.com</p>
