@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div
       id="navabar"
-      className="fixed sm:sticky w-full bottom-0 bg-brand-brown flex justify-around p-3"
+      className="fixed sm:sticky bottom-0 left-0 right-0 bg-brand-brown flex justify-around p-3"
     >
       {navlinks.map((link, i) => (
         <Navlink data={link} key={i} />

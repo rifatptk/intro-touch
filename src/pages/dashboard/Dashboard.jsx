@@ -12,7 +12,7 @@ const Dashboard = () => {
   return (
     <div id="dashboard">
       <Container>
-        <div className="relative font-inter w-full min-h-screen md:min-h-0 md:h-[792px] overflow-auto [&::-webkit-scrollbar]:hidden bg-white">
+        <div className="relative font-inter w-full min-h-screen sm:min-h-0 sm:h-[792px] overflow-auto [&::-webkit-scrollbar]:hidden bg-white">
           <ProfileHeader
             showSidebar={showSidebar}
             setshowSidebar={setshowSidebar}

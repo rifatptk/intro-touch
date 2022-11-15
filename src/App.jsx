@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="w-full min-h-screen bg-brand-gray md:py-6">
+        <div className="w-full min-h-screen bg-brand-gray sm:py-6">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/share-my-details" element={<ShareMyDetails />} />
