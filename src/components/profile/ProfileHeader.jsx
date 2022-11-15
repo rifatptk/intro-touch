@@ -3,14 +3,21 @@ import menu from '../../assets/icons/common/menu.png';
 import ProfileCard from './ProfileCard';
 import Brand from '../../components/common/Brand';
 
-const ProfileHeader = ({ showMenu }) => {
+const ProfileHeader = ({ showMenu, setshowSidebar, showSidebar }) => {
   return (
     <div className="bg-brand-dark-gray p-8 h-[246px]">
       {/* header */}
       <div className="flex justify-between items-center">
         <Brand />
         <div className="flex items-center gap-4">
-          {showMenu && <img src={menu} alt="" className="h-[22px]" />}
+          {showMenu && (
+            <img
+              src={menu}
+              alt=""
+              onClick={() => setshowSidebar(!showSidebar)}
+              className="h-[22px] cursor-pointer"
+            />
+          )}
 
           <div>
             <img src={share} alt="" className="w-[34px] ml-auto" />

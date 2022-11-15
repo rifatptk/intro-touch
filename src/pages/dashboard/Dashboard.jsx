@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../../components/common/Button';
 import Container from '../../components/common/Container';
 import ProfileHeader from '../../components/profile/ProfileHeader';
@@ -8,11 +8,16 @@ import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 
 const Dashboard = () => {
+  const [showSidebar, setshowSidebar] = useState(false);
   return (
     <div id="dashboard">
       <Container>
         <div className="relative font-inter w-full min-h-screen md:min-h-0 md:h-[792px] overflow-auto [&::-webkit-scrollbar]:hidden bg-white">
-          <ProfileHeader showMenu />
+          <ProfileHeader
+            showSidebar={showSidebar}
+            setshowSidebar={setshowSidebar}
+            showMenu
+          />
           <div className="p-8 mt-10 ">
             <div>
               <div className="flex gap-1 items-center justify-end ">
@@ -43,7 +48,7 @@ const Dashboard = () => {
           <Navbar />
         </div>
       </Container>
-      <Sidebar />
+      {showSidebar && <Sidebar closeSidebar={() => setshowSidebar(false)} />}
     </div>
   );
 };
