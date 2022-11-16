@@ -10,7 +10,7 @@ const ShareMyDetails = () => {
   return (
     <div id="shareMyDetails">
       <Container>
-        <div className="relative font-inter w-full min-h-screen md:min-h-0 md:h-[792px] bg-brand-brown p-7 ">
+        <div className="relative font-inter w-full min-h-screen sm:min-h-0 sm:h-[calc(100vh-48px)] overflow-auto [&::-webkit-scrollbar]:hidden bg-brand-brown p-7 ">
           <Brand />
 
           <div className="w-fit mx-auto my-5">
@@ -30,7 +30,7 @@ const ShareMyDetails = () => {
             <Input type="tel" id="number" placeholder="Number" />
             <Input type="text" id="company" placeholder="Company" />
             <Textarea id="note" placeholder="Note" />
-            <Button text="Submit" />
+            <Button text="Submit" onClick={(e) => e.preventDefault()} />
           </form>
         </div>
       </Container>

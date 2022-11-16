@@ -8,7 +8,7 @@ const TechCard = ({ data, edit: editable }) => {
           {data.title}
         </div>
         {editable && (
-          <div className="flex gap-1 items-center ">
+          <div className="flex gap-1 items-center cursor-pointer">
             <span className="text-[12px] font-[300]">Edit</span>
 
             <img src={edit} alt="" className="h-6" />

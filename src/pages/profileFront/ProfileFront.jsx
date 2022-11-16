@@ -11,7 +11,7 @@ const ProfileFront = () => {
   return (
     <div id="profileFront">
       <Container>
-        <div className="relative font-inter w-full min-h-screen md:min-h-0 md:h-[792px] overflow-auto [&::-webkit-scrollbar]:hidden bg-white">
+        <div className="relative font-inter w-full min-h-screen sm:min-h-0 sm:h-[calc(100vh-48px)] overflow-auto [&::-webkit-scrollbar]:hidden bg-white">
           <ProfileHeader />
           <div className="p-8 mt-10 ">
             <ProfileDesc />

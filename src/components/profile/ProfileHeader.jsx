@@ -2,6 +2,7 @@ import share from '../../assets/icons/common/share.png';
 import menu from '../../assets/icons/common/menu.png';
 import ProfileCard from './ProfileCard';
 import Brand from '../../components/common/Brand';
+import { Link } from 'react-router-dom';
 
 const ProfileHeader = ({ showMenu, setshowSidebar, showSidebar }) => {
   return (
@@ -19,10 +20,10 @@ const ProfileHeader = ({ showMenu, setshowSidebar, showSidebar }) => {
             />
           )}
 
-          <div>
+          <Link to="/profile-front">
             <img src={share} alt="" className="w-[34px] ml-auto" />
             <p className="text-white text-[11px] m-0">Share Profile</p>
-          </div>
+          </Link>
         </div>
       </div>
       {/* card */}
