@@ -1,7 +1,7 @@
 import IconButton from '../../components/common/IconButton';
 import employeeId from '../../assets/icons/info/employeeId.png';
 import phonebook from '../../assets/icons/info/phonebook.png';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ProfileDesc = () => {
   const navigate = useNavigate();

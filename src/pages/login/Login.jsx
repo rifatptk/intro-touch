@@ -1,12 +1,16 @@
-import React from 'react';
 import Container from '../../components/common/Container';
 import TextField from '../../components/common/TextField';
 import mail from '../../assets/icons/auth/mail.png';
 import lock from '../../assets/icons/auth/lock.png';
 import Button from '../../components/common/Button';
 import { Navigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Login = ({ auth, setauth }) => {
+  const [data, setData] = useState({
+    email: 'willsmith@iloveu.com',
+    password: 'willsmith@iloveu.com',
+  });
   function login(e) {
     e.preventDefault();
     setauth(true);
@@ -32,15 +36,17 @@ const Login = ({ auth, setauth }) => {
                 icon={mail}
                 label="Email ID"
                 type="email"
-                value="willsmith@iloveu.com"
+                value={data.email}
+                onChange={(e) => setData({ ...data, email: e.target.value })}
                 id="email"
               />
               <TextField
                 icon={lock}
                 type="password"
                 label="Password"
-                value="willsmith@iloveu.com"
-                id="email"
+                value={data.password}
+                onChange={(e) => setData({ ...data, password: e.target.value })}
+                id="password"
               />
               <p className="text-right text-[14px] font-manrope text-brand-mid-gray">
                 Forget Password?

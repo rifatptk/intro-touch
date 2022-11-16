@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from '../../components/common/Container';
 import avatar from '../../assets/images/avatar.png';
 import Input from '../../components/common/Input';

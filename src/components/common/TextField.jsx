@@ -23,7 +23,7 @@ const TextField = ({
         onChange={onChange}
       />
       <label
-        for={id}
+        htmlFor={id}
         className="absolute -top-3 left-8 bg-white px-1 text-brand-mid-gray"
       >
         {label}
